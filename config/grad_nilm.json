@@ -1,0 +1,33 @@
+{
+    "model" : "GRAD-NILM",
+    "config" : 0,
+    "run" : 1,
+    "training" : {
+        "batch_size" : 128,
+        "epoch" : 80,
+        "lr" : 0.001,
+        "decay_steps" : 10,
+        "gamma": 0.1,
+        "optimizer" : "adam",
+        "patience" : 10,
+        "start_stopping" : 5,
+        "save_best" : 0,
+        "ratio_train" : 0.3,
+        "ratio_test" : 0,
+        "validation_split" : 0.2,
+        "S2P_strides" : 1
+    },
+    "dataset" : {
+        "name" : "ukdale",
+        "train" : "/home/hrw/NILM/GRAD-NILM-TKDE/data/UKDALE/Train",
+        "valid" : "/home/hrw/NILM/GRAD-NILM-TKDE/data/UKDALE/Valid",
+        "test"  : "/home/hrw/NILM/GRAD-NILM-TKDE/data/UKDALE/Test"
+    },
+
+    "preprocessing" : {
+        "width" : 128,
+        "strides" : 32
+    },
+
+    "appliance" : "Five appliances"
+}
